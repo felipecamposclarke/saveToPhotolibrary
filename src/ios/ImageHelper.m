@@ -24,7 +24,7 @@
     }
     else
     {
-        result = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:@"Error when saving image"];
+        result = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:path];//@"Error when saving image"];
     }
     
     [self.commandDelegate sendPluginResult:result callbackId:command.callbackId];
