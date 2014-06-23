@@ -15,7 +15,7 @@
     else
     {
         NSString* path = [ [ [ NSBundle mainBundle ] bundlePath ] stringByAppendingString:argPath ];
-        img = [[UIImage alloc] initWithContentsOfFile:path];
+        img = [[UIImage alloc] initWithContentsOfFile:argPath];
     }
 
     if (img != nil) {
