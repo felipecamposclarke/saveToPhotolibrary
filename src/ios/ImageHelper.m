@@ -17,15 +17,6 @@
         NSString* path = [ [ [ NSBundle mainBundle ] bundlePath ] stringByAppendingString:argPath ];
         img = [[UIImage alloc] initWithContentsOfFile:path];
     }
-    
-    UIAlertView *alert = [[UIAlertView alloc]
-    initWithTitle: @"Announcement"
-    message: @"It turns out that you are playing Addicus!"
-    delegate: MY_DELEGATE
-    cancelButtonTitle:@"Cancel"
-    otherButtonTitles:@"OK",nil];
-    [alert show];
-    [alert release];
 
     if (img != nil) {
         UIImageWriteToSavedPhotosAlbum(img, nil, nil, nil);
