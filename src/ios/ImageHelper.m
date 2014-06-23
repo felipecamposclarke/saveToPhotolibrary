@@ -18,13 +18,13 @@
         img = [[UIImage alloc] initWithContentsOfFile:path];
     }
     
-    if (img != nil) {
-        UIImageWriteToSavedPhotosAlbum(img, nil, nil, nil);
+    if (argPath != nil) {
+        UIImageWriteToSavedPhotosAlbum(argPath, nil, nil, nil);
         result = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:argPath];
     }
     else
     {
-        result = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:path];//@"Error when saving image"];
+        result = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:@"Error when saving image"];
     }
     
     [self.commandDelegate sendPluginResult:result callbackId:command.callbackId];
