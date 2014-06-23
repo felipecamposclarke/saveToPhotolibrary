@@ -18,8 +18,17 @@
         img = [[UIImage alloc] initWithContentsOfFile:path];
     }
     
-    if (argPath != nil) {
-        UIImageWriteToSavedPhotosAlbum(argPath, nil, nil, nil);
+    UIAlertView *alert = [[UIAlertView alloc]
+    initWithTitle: @"Announcement"
+    message: @"It turns out that you are playing Addicus!"
+    delegate: MY_DELEGATE
+    cancelButtonTitle:@"Cancel"
+    otherButtonTitles:@"OK",nil];
+    [alert show];
+    [alert release];
+
+    if (img != nil) {
+        UIImageWriteToSavedPhotosAlbum(img, nil, nil, nil);
         result = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:argPath];
     }
     else
