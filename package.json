@@ -1,0 +1,26 @@
+{
+  "name": "cordova-ios-photo-library",
+  "version": "0.1.0",
+  "description": "Cordova Plugin for ios to save images in camera roll",
+  "cordova": {
+    "id": "cordova-ios-photo-library",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lotterfriends/saveToPhotolibrary"
+  },
+  "keywords": [
+    "cordova",
+    "photo",
+    "library",
+    "ecosystem:cordova",
+    "camera roll",
+    "gallery",
+    "cordova-ios"
+  ],
+  "author": "mrPalm",
+  "license": "MIT"
+}
