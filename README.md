@@ -1,6 +1,6 @@
 ## Simple plugin to handle save image to user library on iOS
 
-Fork from  https://github.com/phongjalvn/cordova-imagehelper.git
+Fork from  https://github.com/mrPalm/saveToPhotolibrary
 
 ## 1 step install
 
