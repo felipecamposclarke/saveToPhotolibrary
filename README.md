@@ -1,11 +1,11 @@
 ## Simple plugin to handle save image to user library on iOS
 
-Based on https://groups.google.com/d/msg/phonegap/6n7jGIey9hA/ZlPGiV8Dpm8J
+Fork from  https://github.com/phongjalvn/cordova-imagehelper.git
 
 ## 1 step install
 
 ```
-cordova plugin add https://github.com/phongjalvn/cordova-imagehelper.git
+cordova plugin add cordova-ios-photo-library
 ```
 
 ## Usage
