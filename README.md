@@ -14,7 +14,7 @@ You **do not** need to reference any JavaScript, the Cordova plugin architecture
 
 Ensure you use the plugin after your deviceready event has been fired.
 
-### Save image from URL or path (path is relative to the application root)
+### Save image from URL (@url or @file) or path (path is relative to the application root)
 
 ```
 window.ImageHelper.saveToUserLibrary(imageUrl, successCallback, failCallback);
