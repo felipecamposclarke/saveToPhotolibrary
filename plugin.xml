@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="imagehelper" version="0.2.3">
-    <name>Image Helper</name>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-ios-save-to-library" version="0.2.4">
+    <name>cordova-ios-save-to-library</name>
     <author>phongjalvn</author>
     <description>Cordova iOS image helper library</description>
     <keywords>cordova, image, photos</keywords>
