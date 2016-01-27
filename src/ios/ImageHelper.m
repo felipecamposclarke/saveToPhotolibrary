@@ -6,8 +6,8 @@
     CDVPluginResult* result = nil;
     NSString* argPath = [command.arguments objectAtIndex:0];
     UIImage *img = nil;
-    
-    if ([argPath hasPrefix:@"http"]) {
+
+    if ([argPath hasPrefix:@"http"] || [argPath hasPrefix:@"file"]) {
         NSURL *url = [NSURL URLWithString:argPath];
         NSData *data = [NSData dataWithContentsOfURL:url];
         img = [[UIImage alloc] initWithData:data];
@@ -26,7 +26,7 @@
     {
         result = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:@"Error when saving image"];
     }
-    
+
     [self.commandDelegate sendPluginResult:result callbackId:command.callbackId];
 }
 @end
